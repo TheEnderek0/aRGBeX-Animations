@@ -1,0 +1,204 @@
+BFM
+
+<Sequences>
+
+Flash1() {
+    Static( All() ColorShift(Color(0 0 0) Color(75 129 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(75 129 255) Color(0 0 0) 0.4))
+}
+
+Flash2() {
+    Static( All() ColorShift(Color(0 0 0) Color(209 114 223) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(209 114 223) Color(0 0 0) 0.4))
+}
+
+Flash3() {
+    Static( All() ColorShift(Color(0 0 0) Color(253 192 251) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(253 192 251) Color(0 0 0) 0.4))
+}
+
+Flash4() {
+    Static( All() ColorShift(Color(0 0 0) Color(96 52 158) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(96 52 158) Color(0 0 0) 0.4))
+}
+
+QuadFlash() {
+    Flash1()
+    Wait(0.5)
+    Flash2()
+    Wait(0.5)
+    Flash3()
+    Wait(0.5)
+    Flash4()
+}
+
+pulseVerySoft() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(0 0 0) 2))
+}
+
+pulseLessSharp() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(0 0 0) 0.2))
+}
+
+BFM() {
+    Static(Range(1 100) Color(96 52 158))
+    Wait(0.5)
+    Static(Range(101 200) Color(96 52 158))
+    Wait(0.5)
+    Static(Range(201 300) Color(96 52 158))
+    Wait(0.5)
+    Static(All() ColorShift(Color(96 52 158) Color(0 0 0) 0.5))
+}
+
+Chorus() {
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    pulseVerySoft()
+    Wait(2)
+
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    BFM()
+    Wait(2.2)
+
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    pulseVerySoft()
+    Wait(2)
+
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    QuadFlash()
+    Wait(2)
+    BFM()
+    Wait(2)
+
+}
+
+AsteriaPart() {
+    Static(Checker(0 10 10) Color(255 50 50))
+    Wait(0.5)
+    Static(Checker(10 10 10) Color(255 50 50))
+    Wait(0.5)
+    Static(Checker(0 10 10) Color(241 148 72))
+    Wait(0.5)
+    Static(Checker(10 10 10) Color(241 148 72))
+    
+}
+
+PulseInt() {
+    Static( All() ColorShift(Color(255 0 0) Color(0 0 0) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(0 0 0) Color(255 0 0) 0.2))
+}
+
+Pulse() {
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+    PulseInt()
+    Wait(0.5)
+}
+
+
+<Playback>
+00:08:15 QuadFlash()
+00:10:20 QuadFlash()
+00:12:20 QuadFlash()
+00:14:20 QuadFlash()
+00:16:20 QuadFlash()
+00:18:20 QuadFlash()
+00:20:20 QuadFlash()
+00:22:20 QuadFlash()
+00:24:20 QuadFlash()
+00:26:20 QuadFlash()
+00:25:80 pulseLessSharp()
+00:27:80 pulseLessSharp()
+00:28:20 QuadFlash()
+00:30:70 pulseVerySoft()
+00:32:50 pulseLessSharp()
+00:34:60 pulseLessSharp()
+00:36:60 pulseLessSharp()
+00:38:65 QuadFlash()
+
+00:40:50 pulseLessSharp()
+00:42:60 pulseLessSharp()
+00:46:50 pulseVerySoft()
+00:48:80 Chorus()
+01:21:40 AsteriaPart()
+01:22:80 Static(Checker(0 10 10) Color(255 50 50))
+01:23:40 Static(Checker(10 10 10) Color(255 50 50))
+01:23:90 Static(All() ColorShift(Color(255 50 50) Color(0 0 0) 0.4))
+01:25:40 AsteriaPart()
+01:27:40 AsteriaPart()
+01:29:00 AsteriaPart()
+01:31:00 AsteriaPart()
+01:33:10 AsteriaPart()
+01:35:10 Static(All() Color(100 12 12))
+01:37:10 Static(All() ColorShift(Color(100 12 12) Color(255 0 0) 0.5))
+01:38:15 Pulse()
+01:54:00 Chorus()
+02:26:50 pulseVerySoft()
