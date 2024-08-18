@@ -1,0 +1,339 @@
+JOYRIDE|Kesha
+
+<Sequences>
+
+Seq1() {
+    Seq1A()
+    Wait(0.38)
+    Seq1B()
+}
+
+Seq1A() {
+    Static(Checker(0 10 10) ColorShift(Color( 0 0 0 ) Color( 215 77 58 ) 0.1))
+    Wait(0.1)
+    Static(Checker(0 10 10) ColorShift(Color( 0 0 0 ) Color( 215 77 58 ) 0.15))
+    Wait(0.28)
+}
+
+Seq1B() {
+    Static(Checker(10 10 10) ColorShift(Color( 0 0 0 ) Color( 215 77 58 ) 0.1))
+    Wait(0.1)
+    Static(Checker(10 10 10) ColorShift(Color( 0 0 0 ) Color( 215 77 58 ) 0.15))
+    Wait(0.28)
+}
+
+VerseA() {
+    Static(Checker(0 10 10) ColorShift(Color( 0 0 0 ) Color( 213 115 26 ) 0.3))
+    Wait(0.3)
+    Static(Checker(0 10 10) ColorShift(Color( 213 115 26 ) Color( 0 0 0 ) 0.15))
+}
+
+VerseB() {
+    Static(Checker(10 10 10) ColorShift(Color( 0 0 0 ) Color( 213 115 26 ) 0.3))
+    Wait(0.3)
+    Static(Checker(10 10 10) ColorShift(Color( 213 115 26 ) Color( 0 0 0 ) 0.15))
+}
+
+pulseVerySoft() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(0 0 0) 2))
+}
+
+pulseHalf() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(0 0 0) 0.5))
+}
+
+pulseRed() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 0 0) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 0 0) Color(0 0 0) 0.4))
+}
+
+Verse() {
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+}
+
+pulseGold() {
+    Static(Checker(0 15 15) ColorShift(Color(0 0 0) Color(213 115 26) 0.1))
+    Wait(0.2)
+    Static(Checker(0 15 15) ColorShift(Color(213 115 26) Color(0 0 0) 0.1))
+}
+
+pulseGoldB() {
+    Static(Checker(15 15 15) ColorShift(Color(0 0 0) Color(213 115 26) 0.1))
+    Wait(0.2)
+    Static(Checker(15 15 15) ColorShift(Color(213 115 26) Color(0 0 0) 0.1))
+}
+
+DontEven() {
+    pulseGold()
+    Wait(0.2)
+    pulseGoldB()
+    Wait(0.2)
+    pulseGold()
+    Wait(0.2)
+    pulseGoldB()
+    Wait(0.2)
+}
+
+Joy() {
+    Static(All() ColorShift(Color(0 0 0) Color(213 115 26) 0.1))
+    Wait(0.1)
+    Static(All() ColorShift(Color(213 115 26) Color(0 0 0) 0.2))
+}
+
+Ride() {
+    Static(All() ColorShift(Color(0 0 0) Color(215 77 58) 0.1))
+    Wait(0.1)
+    Static(All() ColorShift(Color(215 77 58) Color(0 0 0) 0.2))
+}
+
+Bridge() {
+    Joy()
+    Wait(0.5)
+    Ride()
+    Wait(1)
+    Joy()
+    Wait(0.3)
+    Ride()
+
+    Wait(2)
+    Joy()
+    Wait(0.5)
+    Ride()
+    Wait(1)
+    Joy()
+    Wait(0.3)
+    Ride()
+}
+
+Chorus() {
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+    Wait(0.5)
+    VerseB()
+    Wait(0.5)
+    VerseA()
+}
+
+RandomLightA() {
+    Static(Random(100) ColorShift(Color(0 0 0) Color(215 77 58) 0.2))
+    Wait(0.2)
+    Static(All() Color(0 0 0))
+}
+
+
+RandomLightB() {
+    Static(Random(100) ColorShift(Color(0 0 0) Color(213 115 26) 0.2))
+    Wait(0.2)
+    Static(All() Color(0 0 0))
+}
+
+SoloPart() {
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+    RandomLightB()
+    Wait(0.4)
+    RandomLightA()
+    Wait(0.4)
+}
+
+JoyRide() {
+    Joy()
+    Wait(0.3)
+    Ride()
+}
+
+<Playback>
+00:00:05 Seq1()
+00:00:83 Seq1()
+00:01:60 Seq1()
+00:01:60 Seq1()
+00:02:36 Seq1()
+00:03:10 Seq1()
+00:03:90 Seq1A()
+00:04:10 Seq1B()
+00:04:50 Seq1()
+00:05:30 Seq1()
+00:06:10 Seq1()
+00:06:90 Seq1()
+00:08:30 Verse()
+00:14:20 pulseVerySoft()
+00:19:90 DontEven()
+00:21:45 pulseGold()
+00:21:75 pulseGoldB()
+00:22:52 DontEven()
+00:23:50 pulseGold()
+00:23:80 pulseGoldB()
+00:24:32 pulseHalf()
+00:24:80 pulseVerySoft()
+00:31:55 DontEven()
+00:33:15 Bridge()
+00:41:40 Chorus()
+00:42:95 Joy()
+00:45:00 Ride()
+00:45:50 pulseRed()
+00:45:80 pulseRed()
+00:48:90 Joy()
+00:49:20 Ride()
+00:49:60 Chorus()
+00:54:05 pulseRed()
+00:54:35 pulseRed()
+00:57:20 Joy()
+00:57:50 Ride()
+00:57:80 SoloPart()
+01:05:47 JoyRide()
+01:13:66 JoyRide()
+01:14:50 Verse()
+01:26:10 DontEven()
+01:31:00 Bridge()
+01:39:30 Chorus()
+01:43:75 pulseRed()
+01:44:05 pulseRed()
+01:46:95 JoyRide()
+01:47:60 Chorus()
+01:52:00 pulseRed()
+01:52:25 pulseRed()
+01:55:10 JoyRide()
+01:55:87 DontEven()
+01:58:10 DontEven()
+02:00:10 DontEven()
+02:02:80 pulseRed()
+02:03:90 pulseRed()
+02:04:41 DontEven()
+02:06:20 DontEven()
+02:12:43 SoloPart()
+02:16:00 Joy()
+02:16:30 Joy()
+02:24:00 Joy()
+02:24:30 Joy()
+02:28:13 JoyRide()
