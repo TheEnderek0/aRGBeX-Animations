@@ -1,0 +1,260 @@
+911|Lady Gaga
+
+<Sequences>
+
+WhRdFlash() {
+    Static(Checker(0 20 20) ColorShift(Color(0 0 0) Color(255 0 0) 0.6))
+    Wait(0.2)
+    Static(Checker(10 20 20) ColorShift(Color(0 0 0) Color(255 0 0) 0.4))
+    Wait(0.2)
+    Static(Checker(20 20 20) ColorShift(Color(0 0 0) Color(255 0 0) 0.2))
+    Wait(0.2)
+    Static(All() Color(255 255 255))
+    Wait(0.1)
+    Static(All() Color(0 0 0))
+}
+
+pulseLessSharp() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(0 0 0) 0.2))
+}
+
+pulseWhiteBRed() {
+    Static( All() ColorShift(Color(255 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(255 0 0) 0.1))
+}
+
+pulseVerySoft() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 255 255) Color(0 0 0) 2))
+}
+
+VerseP1() {
+    Wait(0.5)
+    WhRdFlash()
+    Wait(1.1)
+    WhRdFlash()
+    Wait(1.1)
+    WhRdFlash()
+    Wait(1.1)
+    WhRdFlash()
+    Wait(1.1)
+    WhRdFlash()
+    Wait(1.1)
+    WhRdFlash()
+    Wait(1.1)
+    WhRdFlash()
+    Wait(1.1)
+}
+
+VerseP2() { //This is biological stasis...
+    pulseLessSharp()
+    Wait(1.6)
+    pulseLessSharp() //18.1
+    Wait(2)
+    pulseLessSharp()
+    Wait(2)
+    pulseLessSharp() //22.1
+    Wait(0.6)
+    Slide(Range(1 150) Color(255 255 255) 0.25 Single) //22.7
+    Slide(Range(151 300) Color(255 255 255) 0.25 Single Reversed) 
+    Wait(0.3) //23
+    Slide(Range(1 150) Color(0 0 0) 0.25 Single Reversed)
+    Slide(Range(151 300) Color(0 0 0) 0.25 Single)
+    Wait(1)
+    Slide(All() Color(255 0 0) 0.4 Single Reversed)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 0.4 Single Reversed)
+}
+
+cry() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 0 0) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 0 0) Color(0 0 0) 1))
+}
+
+ICantCry() {
+    Slide(Range(1 150) Color(255 255 255) 0.4 Single Reversed)
+    Slide(Range(151 300) Color(255 255 255) 0.4 Single)
+    Wait(2.15)
+    cry()
+    Wait(2)
+    cry()
+}
+
+cantCryBackInt() {
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+    Static(Random(50) Color(255 255 255))
+    Wait(0.05)
+    Static(All() Color(0 0 0))
+    Wait(0.05)
+}
+
+cantCryBack() {
+    cantCryBackInt()
+    Wait(1)
+    cantCryBackInt()
+    Wait(1)
+    cantCryBackInt()
+    Wait(1)
+    cantCryBackInt()
+    Wait(1)
+    cantCryBackInt()
+    Wait(1)
+    cantCryBackInt()
+    Wait(1)
+    cantCryBackInt()
+    Wait(1)
+}
+
+WhRdFlashChorus() {
+    Static(Checker(0 20 20) ColorShift(Color(255 0 0) Color(255 255 255) 0.1))
+    Wait(0.1)
+    Static(Checker(0 20 20) ColorShift(Color(255 255 255) Color(255 0 0) 0.1))
+    Wait(0.1)
+    Static(Checker(10 20 20) ColorShift(Color(255 0 0) Color(255 255 255) 0.1))
+    Wait(0.1)
+    Static(Checker(10 20 20) ColorShift(Color(255 255 255) Color(255 0 0) 0.1))
+    Wait(0.1)
+    Static(Checker(20 20 20) ColorShift(Color(255 0 0) Color(255 255 255) 0.1))
+    Wait(0.1)
+    Static(Checker(20 20 20) ColorShift(Color(255 255 255) Color(255 0 0) 0.1))
+    Wait(0.1)
+    pulseWhiteBRed()
+}
+
+s911() { // Creates a       ORRRRRRRRROROR... repeating pattern
+    Static(Checker(1 9 5) ColorShift(Color(0 0 0) Color(255 0 0) 0.5))
+    Wait(0.5)
+    Static(Checker(11 1 13) ColorShift(Color(0 0 0) Color(255 0 0) 0.5))
+    Wait(0.5)
+    Static(Checker(13 1 13) ColorShift(Color(0 0 0) Color(255 0 0) 0.5))
+    Wait(0.5)
+    Static(All() Color(255 0 0))
+}
+
+
+Chorus() {
+    Static(All() ColorShift(Color(0 0 0) Color(255 0 0) 0.1))
+    Wait(0.15)
+    WhRdFlashChorus()
+    Wait(1)
+    WhRdFlashChorus()
+    Wait(1)
+    WhRdFlashChorus()
+    Wait(0.85)
+    Static(All() ColorShift(Color(255 0 0) Color(0 0 0) 0.1))
+    Wait(0.15)
+
+    s911() //44.50
+    Wait(1.3)
+
+    WhRdFlashChorus()
+    Wait(1)
+    WhRdFlashChorus()
+    Wait(1)
+    WhRdFlashChorus()
+    Wait(0.85)
+    Static(All() ColorShift(Color(255 0 0) Color(0 0 0) 0.1))
+    Wait(0.15)
+
+    s911() //44.50
+    Wait(1.3)
+
+    WhRdFlashChorus()//45.80
+    Wait(1)
+    WhRdFlashChorus()
+    Wait(1)
+    WhRdFlashChorus()
+    Wait(0.85)
+    Static(All() ColorShift(Color(255 0 0) Color(0 0 0) 0.1))
+    Wait(0.15)
+
+    pulseWhiteBRed()
+    Wait(0.5)
+    Static(All() Color(0 0 0))
+    Wait(0.5)
+    s911()
+    Wait(1.3)
+    Static(All() Color(0 0 0))
+    Wait(0.5)
+    pulseVerySoft()
+    
+}
+
+<Playback>
+00:00:80 WhRdFlash()
+00:01:80 WhRdFlash()
+00:02:80 WhRdFlash()
+00:03:80 WhRdFlash()
+00:04:80 WhRdFlash()
+00:05:80 WhRdFlash()
+00:06:80 WhRdFlash()
+00:07:80 WhRdFlash()
+00:08:30 VerseP1()
+00:16:50 VerseP2()
+00:24:85 ICantCry()
+00:33:10 cantCryBack()
+00:33:10 ICantCry()
+00:41:30 Chorus() //10ms earlier to accomodate for the change to red
+00:57:95 VerseP1()
+01:06:25 VerseP2()
+01:14:50 ICantCry()
+01:22:80 cantCryBack()
+01:22:80 ICantCry()
+01:30:85 Chorus()
+01:49:95 pulseLessSharp()
+01:50:20 pulseVerySoft()
+01:52:30 s911()
+01:54:30 pulseVerySoft()
+01:55:90 cantCryBack()
+01:55:90 ICantCry()
+02:04:10 cantCryBack()
+02:04:10 ICantCry()
+02:12:35 Chorus()
+02:30:80 pulseVerySoft()
+02:32:80 pulseVerySoft()
+02:34:10 s911()
+02:37:00 pulseLessSharp()
+02:39:00 pulseVerySoft()
+02:41:10 pulseVerySoft()
+02:42:45 s911()
+02:45:30 pulseVerySoft()
