@@ -1,0 +1,341 @@
+Replay|Lady Gaga
+
+<Sequences>
+
+GreenDots() {
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+    
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(Random(50) ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(0 0 0) Color(50 255 50) 0.1))
+    Wait(0.3)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+}
+
+greenpulse() {
+    Static( All() ColorShift(Color(0 0 0) Color(0 255 0) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(0 255 0) Color(0 0 0) 1))
+}
+
+greenpulseA() {
+    Static( Checker(0 10 20) ColorShift(Color(0 0 0) Color(0 255 0) 0.05))
+    Wait(0.05)
+    Static( Checker(0 10 20) ColorShift(Color(0 255 0) Color(0 0 0) 3))
+}
+
+greenpulseB() {
+    Static( Checker(10 10 20) ColorShift(Color(0 0 0) Color(0 255 0) 0.05))
+    Wait(0.05)
+    Static( Checker(10 10 20) ColorShift(Color(0 255 0) Color(0 0 0) 3))
+}
+
+greenpulseC() {
+    Static( Checker(20 10 20) ColorShift(Color(0 0 0) Color(0 255 0) 0.05))
+    Wait(0.05)
+    Static( Checker(20 10 20) ColorShift(Color(0 255 0) Color(0 0 0) 1.9))
+}
+
+Verse() {
+    greenpulseA() //20:30
+    Wait(2)
+    greenpulseB() //22.30
+    Wait(2)
+    greenpulseC() //24.30
+    Wait(2)
+    Slide(Checker(0 20 20) Color(242 142 19) 0.5 Single Reversed) //25.8
+    Wait(1)
+    Static(Checker(20 20 20) ColorShift(Color(0 0 0) Color(242 142 19) 0.1)) //26.8
+    Wait(0.4)
+    Static(All() ColorShift(Color(242 142 19) Color(50 255 50) 0.1))
+    Wait(0.4)
+    Static(All() ColorShift(Color(50 255 50) Color(0 0 0) 0.1))
+
+}
+
+Replay() {
+    Slide(All() Color(0 0 0) 0.3 Single)
+    Wait(0.1)
+    Slide(All() Color(0 255 0) 0.3 Single)
+}
+
+ReplayEnd() {
+    Slide(All() Color(0 0 0) 0.5 Single)
+}
+
+Bridge() {
+    Static( Checker(0 10 10) ColorShift(Color(0 0 0) Color(0 120 0) 1.5)) //37.00
+    Wait(2)
+    Static( Checker(10 10 10) ColorShift(Color(0 0 0) Color(0 120 0) 1.5)) //39.00
+    Wait(2)
+    Static(All() ColorShift(Color(0 120 0) Color(0 0 0) 0.1)) //41.00
+    Wait(0.2)
+    Static(All() ColorShift(Color(0 0 0) Color(0 255 0) 1.5)) //41.20
+    Wait(2.2)
+    Replay() //43.40
+    Wait(1)
+    ReplayEnd() //44.40
+    Wait(0.8)
+    Static(All() ColorShift(Color(0 0 0) Color(0 255 0) 1.5)) //45.20
+    Wait(6.1)
+    Replay() //51.30
+    Wait(0.8)
+    Replay()
+
+
+}
+
+Chorus() {
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+    Replay() 
+    Wait(0.5)
+}
+
+FlippedPulseA() {
+    Static(Checker(0 10 30) ColorShift(Color(0 120 0) Color(0 0 0) 0.15))
+    Wait(0.2)
+    Static(Checker(0 10 30) ColorShift(Color(0 0 0) Color(0 120 0) 0.2))
+}
+
+FlippedPulseB() {
+    Static(Checker(10 10 30) ColorShift(Color(0 120 0) Color(0 0 0) 0.15))
+    Wait(0.2)
+    Static(Checker(10 10 30) ColorShift(Color(0 0 0) Color(0 120 0) 0.2))
+}
+
+FlippedPulseC() {
+    Static(Checker(20 10 30) ColorShift(Color(0 120 0) Color(0 0 0) 0.15))
+    Wait(0.1)
+    Static(Checker(20 10 30) ColorShift(Color(0 0 0) Color(0 120 0) 0.2))
+}
+
+FlippedPulseD() {
+    Static(Checker(30 10 30) ColorShift(Color(0 120 0) Color(0 0 0) 0.15))
+    Wait(0.2)
+    Static(Checker(30 10 30) ColorShift(Color(0 0 0) Color(0 120 0) 0.2))
+}
+
+EndingLine() {
+    Static(All() ColorShift(Color(0 0 0) Color(0 120 0) 1)) //06.50
+    Wait(1.5)
+    FlippedPulseA()
+    Wait(0.5)
+    FlippedPulseB()
+    Wait(0.5)
+    FlippedPulseC()
+    Wait(0.5)
+    FlippedPulseD()
+    Wait(0.5)
+    Static(All() ColorShift(Color(0 120 0) Color(0 0 0) 0.2))
+
+}
+
+redpulse() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 0 0) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 0 0) Color(0 0 0) 1))
+}
+
+DoesItMatter() {
+    redpulse()
+    Wait(1)
+    redpulse()
+
+}
+
+FlippedPulseA2() {
+    Static(Checker(0 10 30) ColorShift(Color(0 255 0) Color(0 0 0) 0.15))
+    Wait(0.2)
+    Static(Checker(0 10 30) ColorShift(Color(0 0 0) Color(0 255 0) 0.2))
+}
+
+FlippedPulseB2() {
+    Static(Checker(10 10 30) ColorShift(Color(0 255 0) Color(0 0 0) 0.15))
+    Wait(0.2)
+    Static(Checker(10 10 30) ColorShift(Color(0 0 0) Color(0 255 0) 0.2))
+}
+
+FlippedPulseC2() {
+    Static(Checker(20 10 30) ColorShift(Color(0 255 0) Color(0 0 0) 0.15))
+    Wait(0.1)
+    Static(Checker(20 10 30) ColorShift(Color(0 0 0) Color(0 255 0) 0.2))
+}
+
+FlippedPulseD2() {
+    Static(Checker(30 10 30) ColorShift(Color(0 255 0) Color(0 0 0) 0.15))
+    Wait(0.2)
+    Static(Checker(30 10 30) ColorShift(Color(0 0 0) Color(0 255 0) 0.2))
+}
+
+InversePulse() {
+    Static(All() ColorShift(Color(0 255 0) Color(0 50 0) 0.9))
+    Wait(0.95)
+    Static(All() ColorShift(Color(0 50 0) Color(0 255 0) 0.2))
+}
+
+Monsters() {
+    FlippedPulseA2() //Your
+    Wait(0.5)
+    FlippedPulseB2() //Mon
+    Wait(0.5)
+    FlippedPulseC2() //sters
+    Wait(0.5)
+    FlippedPulseD2() /tor
+    Wait(0.5)
+    FlippedPulseA2() //ture
+    Wait(0.3)
+    InversePulse() //me
+}
+
+<Playback>
+00:04:25 GreenDots()
+00:12:45 greenpulse()
+00:16:40 greenpulse()
+00:20:30 Verse()
+00:28:20 Verse()
+00:37:00 Bridge()
+00:53:30 Chorus()
+01:08:30 Static(All() ColorShift(Color(0 255 0) Color(0 0 0) 0.1))
+01:09:50 Verse()
+01:17:40 Verse()
+01:26:20 Bridge()
+01:42:50 Chorus()
+01:57:50 Static(All() ColorShift(Color(0 255 0) Color(0 0 0) 0.1))
+01:58:20 GreenDots()
+02:06:50 EndingLine()
+02:10:35 EndingLine()
+02:14:40 DoesItMatter()
+02:18:30 DoesItMatter()
+02:21:30 redpulse()
+02:23:25 redpulse()
+02:25:25 redpulse()
+02:27:70 Static(All() ColorShift(Color(0 0 0) Color(0 255 0) 1.5))
+02:29:65 Chorus()
+02:45:80 Monsters()
+02:49:80 Monsters()
+02:53:80 Monsters()
+02:59:20 Replay()
+03:00:00 ReplayEnd()
+03:06:00 Static(All() Color(0 0 0))
