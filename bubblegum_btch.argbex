@@ -1,0 +1,239 @@
+Bubblegum Bitch
+
+<Sequences>
+
+Slas() {
+    Slide(All() Color(120 120 120) 0.3 Single)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 0.3 Single)
+}
+
+whitePulseVerse() {
+    Static(All() ColorShift(Color(120 120 120) Color(255 255 255) 0.2))
+    Wait(0.25)
+    Static(All() ColorShift(Color(255 255 255) Color(0 0 0) 0.7))
+}
+
+Verse() {
+    Static(Checker(0 15 15) ColorShift(Color(0 0 0) Color(120 120 120) 2)) //14.2
+    Wait(1.45)
+    Static(Checker(15 15 15) ColorShift(Color(0 0 0) Color(120 120 120) 2)) //15.65
+    Wait(3.35)
+    Static(All() ColorShift(Color(120 120 120) Color(0 0 0) 0.5)) //19.0
+    Wait(1.6)
+    Static(Checker(0 15 15) ColorShift(Color(0 0 0) Color(120 120 120) 1)) //20.6
+    Wait(0.8)
+    Static(Checker(15 15 15) ColorShift(Color(0 0 0) Color(120 120 120) 1)) //21.4
+    Wait(0.7)
+    Slas() //22.1
+    Wait(0.4)
+    Slas() //22.5
+    Wait(0.4)
+    Slas() //22.9
+    Wait(0.75)
+    Static(All() ColorShift(Color(0 0 0) Color(120 120 120) 1)) //23.65
+    Wait(1.45)
+    whitePulseVerse() //25.10
+}
+
+whitepulseA() {
+    Static( Checker(0 10 20) ColorShift(Color(0 0 0) Color(200 200 200) 0.4))
+}
+
+whitepulseB() {
+    Static( Checker(10 10 20) ColorShift(Color(0 0 0) Color(200 200 200) 0.4))
+}
+
+whitepulseC() {
+    Static( Checker(20 10 20) ColorShift(Color(0 0 0) Color(200 200 200) 0.4))
+}
+
+redpulse() {
+    Static( All() ColorShift(Color(0 0 0) Color(255 0 0) 0.05))
+    Wait(0.05)
+    Static( All() ColorShift(Color(255 0 0) Color(0 0 0) 1))
+}
+
+
+Bridge() {
+    whitepulseA() //26.6
+    Wait(0.4)
+    whitepulseB() //27
+    Wait(0.4)
+    whitepulseC() //27.4
+
+    Wait(1.6)
+    Static(All() ColorShift(Color(200 200 200) Color(0 0 0) 1)) //29.00
+    Wait(1.8)
+    Static(All() ColorShift(Color(0 0 0) Color(255 50 50) 0.1)) //30.80
+    Wait(1.2)
+    Slide(All() Color(0 0 0) 0.5 Single Reversed) //32
+    Wait(2.6)
+    redpulse() //34.60
+    Wait(1.2)
+    Static(All() ColorShift(Color(0 0 0) Color(120 120 120) 0.5)) //35.8
+    Wait(0.7)
+    Static(All() Color(0 0 0)) //36.50
+    Wait(0.8)
+    redpulse() //37.30
+    Wait(0.3)
+    redpulse()
+    Wait(0.3)
+    redpulse()
+
+}
+
+liquourFlash() {
+    Static(Checker(10 10 10) ColorShift(Color(245 2 148) Color(0 0 0) 0.1))
+    Wait(0.15)
+    Static(Checker(10 10 10) ColorShift(Color(0 0 0) Color(245 2 148) 0.25))
+}
+
+lips() {
+    Static(Checker(0 10 10) ColorShift(Color(255 255 255) Color(0 0 0) 0.4))
+    Static(Checker(10 10 10) ColorShift(Color( 245 2 148 ) Color(0 0 0) 0.4))
+}
+
+whitePulseChorus() {
+    Static(All() ColorShift(Color(200 200 200) Color(86 199 238) 0.2))
+    Wait(0.25)
+    Static(All() ColorShift(Color(86 199 238) Color(0 0 0) 0.7))
+}
+
+bubblegumb() {
+    whitepulseA() //49.50
+    Wait(0.2)
+    whitepulseB() //49.70
+    Wait(0.2)
+    whitepulseC() //49.90
+    Wait(0.3)
+
+    whitePulseChorus() //50.20
+}
+
+Imgonna() {
+    Slas() //47.95
+    Wait(0.4)
+    Slas() //48.35
+    Wait(0.4)
+    Slas() // 48.75
+    Wait(0.75)
+
+    bubblegumb() //49.50
+
+}
+
+Chorus() {
+    Static(All() ColorShift(Color(0 0 0) Color(50 50 50) 0.5)) //38.8
+    Wait(0.7)
+    Static(Checker(0 10 10) Color(255 255 255)) //39.5
+    Wait(0.45)
+    Static(Checker(10 10 10) Color(245 2 148)) //39.95
+    Wait(0.4)
+    liquourFlash() //40.35
+    Wait(0.4)
+    liquourFlash() //40.75
+    Wait(0.4)
+    lips() //41.15
+
+    //Hit me with your sweet love....
+    Wait(1.85)
+    redpulse() //43.00
+    Wait(1.15)
+    redpulse() //44.15
+    
+    Wait(0.75)
+
+    //Starts at 44.90
+    Static(All() ColorShift(Color(0 0 0) Color(50 50 50) 0.5)) //44.90
+    Wait(0.7)
+    Static(Checker(0 10 10) Color(255 255 255)) //45.6
+    Wait(0.45)
+    Static(Checker(10 10 10) Color(245 2 148)) //46.05
+    Wait(0.4)
+    liquourFlash() //46.45
+    Wait(0.4)
+    liquourFlash() //46.85
+    Wait(0.4)
+    lips() //47.25
+
+    Wait(0.7)
+    Imgonna() //47.95
+    Wait(3.05)
+    Imgonna() //51.00
+
+}
+
+Sos() {
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+    Slas()
+    Wait(0.4)
+}
+
+<Playback>
+00:14:20 Verse()
+00:26:60 Bridge()
+00:38:80 Chorus()
+01:00:00 Verse()
+01:12:25 Bridge()
+01:24:40 Chorus()
+01:51:75 Sos()
+02:03:90 Chorus()
+02:19:00 Chorus()
