@@ -1,0 +1,223 @@
+HOT TO GO!
+
+<Sequences>
+
+pulseA() {
+    Static( Checker(0 10 30) ColorShift(Color(0 0 0) Color(200 200 200) 0.05))
+    Wait(0.05)
+    Static( Checker(0 10 30) ColorShift(Color(200 200 200) Color(0 0 0) 1))
+}
+
+pulseB() {
+    Static( Checker(10 10 30) ColorShift(Color(0 0 0) Color(173 23 22) 0.05))
+    Wait(0.05)
+    Static( Checker(10 10 30) ColorShift(Color(173 23 22) Color(0 0 0) 1))
+}
+
+pulseC() {
+    Static( Checker(20 10 30) ColorShift(Color(0 0 0) Color(247 220 183) 0.05))
+    Wait(0.05)
+    Static( Checker(20 10 30) ColorShift(Color(247 220 183) Color(0 0 0) 1))
+}
+
+
+pulseD() {
+    Static( Checker(30 10 30) ColorShift(Color(0 0 0) Color(0 122 139) 0.05))
+    Wait(0.05)
+    Static( Checker(30 10 30) ColorShift(Color(0 122 139) Color(0 0 0) 1))
+}
+
+Beat() {
+    pulseA()
+    Wait(0.2)
+    pulseB()
+    Wait(0.2)
+    pulseC()
+    Wait(0.2)
+    pulseD()
+    Wait(0.2)
+    pulseA()
+    Wait(0.2)
+    pulseB()
+    Wait(0.2)
+    pulseC()
+    Wait(0.2)
+    pulseD()
+    Wait(0.2)
+    pulseA()
+    Wait(0.2)
+    pulseB()
+    Wait(0.2)
+    pulseC()
+    Wait(0.2)
+    pulseD()
+    Wait(0.2)
+    pulseA()
+    Wait(0.2)
+    pulseB()
+    Wait(0.2)
+    pulseC()
+    Wait(0.2)
+    pulseD()
+    Wait(0.2)
+}
+
+Verse() {
+    Beat()
+    Wait(3.2)
+    Beat()
+    Wait(3.2)
+    Beat()
+    Wait(3.2)
+    Beat()
+    Wait(3.2)
+}
+
+Slas() {
+    Slide(All() Color(255 200 200) 0.3 Single)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 0.3 Single)
+}
+
+Doin() {
+    Static(All() ColorShift(Color(0 0 0) Color(255 100 100) 0.5))
+    Wait(0.6)
+    Slide(All() Color(0 0 0) 1 Single Reversed)
+}
+
+Baby() {
+    Wait(1.7)
+    Slide(Checker(0 20 20) Color(200 200 200) 1 Single) //32.90
+    Wait(3.4)
+    Slide(Checker(20 20 20) Color(200 200 200) 0.95 Single) //36.30
+    Wait(1)
+    Static(All() ColorShift(Color(200 200 200) Color(0 0 0) 1)) //37.30
+    Wait(2.45)
+    Static(All() ColorShift(Color(0 0 0) Color(255 255 255) 1)) //39.75
+    Wait(1.75)
+    Doin() //41.50 
+    Wait(1.5)
+    Doin() //43.00
+
+}
+
+BSlideA() {
+    Slide(All() Color(200 200 200) 1 Single)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 1 Single)
+}
+
+BSlideB() {
+    Slide(All() Color(173 23 22) 1 Single)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 1 Single)
+}
+
+BSlideC() {
+    Slide(All() Color(247 220 183) 1 Single)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 1 Single)
+}
+
+BSlideD() {
+    Slide(All() Color(0 122 139) 1 Single)
+    Wait(0.1)
+    Slide(All() Color(0 0 0) 1 Single)
+}
+
+Bridge() {
+    BSlideA()
+    Wait(1)
+    BSlideB()
+    Wait(1)
+    BSlideC()
+    Wait(1)
+    BSlideD()
+    Wait(1)
+    
+    BSlideA()
+    Wait(1)
+    BSlideB()
+    Wait(1)
+    BSlideC()
+    Wait(1)
+    BSlideD()
+    Wait(1)
+    
+    BSlideA()
+    Wait(1)
+    BSlideB()
+    Wait(1)
+    BSlideC()
+    Wait(1)
+    BSlideD()
+    Wait(1)
+    
+    BSlideA()
+    Wait(1)
+}
+
+
+youcantakeme() {
+    Static(Range(1 75) Color(0 122 139))
+    Wait(0.4)
+    Static(Range(226 300) Color(0 122 139)) 
+    Wait(0.4)
+    Static(Range(76 150) Color(0 122 139))
+    Wait(0.4)
+    Static(Range(151 225) Color(0 122 139)) 
+    Wait(0.4)
+
+    Static(All() ColorShift(Color(0 122 139) Color(100 5 5) 0.65))
+    Wait(0.65)
+    Static(All() ColorShift(Color(100 5 5) Color(0 122 139) 0.2))
+    Wait(0.2)
+    Static(All() ColorShift(Color(0 122 139) Color(0 0 0) 0.7))
+}
+
+HOTTOGO() {
+    Static(Range(1 75) Color(255 40 40)) //58.60 H
+    Wait(0.4)
+    Static(Range(76 150) Color(255 40 40)) //60 O
+    Wait(0.4)
+    Static(Range(151 225) Color(255 40 40)) //60.4 T
+    Wait(0.4)
+    Static(Range(226 300) Color(255 40 40)) //60.8 T
+    Wait(0.4)
+
+    Static(All() ColorShift(Color(255 40 40) Color(100 5 5) 0.65))
+    Wait(0.65)
+    Static(All() ColorShift(Color(100 5 5) Color(255 40 40) 0.2))
+    Wait(0.2)
+    Static(All() ColorShift(Color(255 40 40) Color(0 0 0) 0.7))
+}
+
+Chorus() {
+    HOTTOGO()
+    Wait(3.4)
+    youcantakeme()
+    Wait(3.4)
+    HOTTOGO()
+    Wait(3.4)
+    youcantakeme()
+    Wait(3.4)
+}
+
+<Playback>
+
+00:03:75 Beat()
+00:07:20 Beat()
+00:10:60 Beat()
+00:14:00 Beat()
+00:17:50 Verse()
+00:31:20 Baby()
+00:44:90 Bridge()
+00:58:60 Chorus()
+01:12:10 Verse()
+01:26:00 Baby()
+01:39:75 Bridge()
+01:53:45 Chorus()
+02:07:15 Bridge()
+02:20:90 Chorus()
+02:34:60 Chorus()
+03:03:00 Static(All() Color(0 0 0))
