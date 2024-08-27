@@ -1,0 +1,307 @@
+Poker Face
+
+<Sequences>
+
+muhcheckpulse(enddelay) {
+    Static(Checker(0 10 10) ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static(Checker(0 10 10) ColorShift(Color(255 255 255) Color(0 0 0) enddelay))
+}
+
+muhmuh() {
+    muhcheckpulse(0.1)
+    Wait(0.2)
+    muhcheckpulse(0.1)
+    Wait(0.2)
+    muhcheckpulse(0.1)
+    Wait(0.2)
+    muhcheckpulse(0.3)
+
+}
+
+introredslidesint() {
+    Slide(Checker(10 10 10) Color(255 0 0) 3 Single)
+    Wait(0.5)
+    Slide(Checker(10 10 10) Color(0 0 0) 3 Single)
+}
+
+muhlaterpulseA() {
+    Static(Checker(0 10 30) ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static(Checker(0 10 30) ColorShift(Color(255 255 255) Color(0 0 0) 0.7))
+}
+
+muhlaterpulseB() {
+    Static(Checker(20 10 30) ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static(Checker(20 10 30) ColorShift(Color(255 255 255) Color(0 0 0) 0.7))
+}
+
+muhlater() {
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+
+}
+
+
+introredslides() {
+    introredslidesint()
+    Wait(1)
+    introredslidesint()
+    Wait(1)
+    introredslidesint()
+    Wait(1)
+    introredslidesint()
+    Wait(1)
+}
+
+Verse() {
+    muhlater() //lasts 8 seconds | 24.40
+    Wait(8)
+    muhlater()
+    introredslides() //32.50
+    Wait(4)
+    introredslides()
+}
+
+muhcheckpulse1() {
+    Static(Checker(0 10 10) ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static(Checker(0 10 10) ColorShift(Color(255 255 255) Color(0 0 0) 1))
+}
+
+muhcheckpulse05() {
+    Static(Checker(0 10 10) ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static(Checker(0 10 10) ColorShift(Color(255 255 255) Color(0 0 0) 0.5))
+}
+
+Bridge() {
+    introredslides() //40.50
+    Wait(4)
+    introredslides() //44.50
+    Wait(1)
+    muhcheckpulse1() //45.50
+    Wait(2.1)
+    muhcheckpulse05() //47.60
+    Wait(0.5)
+    muhcheckpulse05() //48.10
+
+}
+
+BridgeShort() {
+    introredslides() //40.50
+    Wait(4)
+    Wait(1)
+    muhcheckpulse1() //45.50
+
+}
+
+ChorusInt() {
+    Slide(All() Color(255 255 255) 0.4 Single)
+    Wait(0.1)
+    Slide(All() Color(100 100 100) 0.4 Single)
+    Wait(0.2)
+    Slide(All() Color(100 0 0) 0.4 Single)
+}
+
+ChorusIntLast() {
+    Slide(All() Color(255 255 255) 0.4 Single)
+    Wait(0.1)
+    Slide(All() Color(100 100 100) 0.4 Single)
+    Wait(0.2)
+    Slide(All() Color(0 0 0) 0.4 Single)
+}
+
+Chorus() { //20 seconds (21 seconds is the red slides)
+
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+    ChorusInt()
+    Wait(0.5)
+
+    ChorusInt()
+    Wait(0.5)
+    ChorusIntLast()
+
+}
+
+popopopoker() { //8s
+    muhlater()
+    Wait(3)
+    muhmuh()
+    Wait(4)
+    muhmuh()
+}
+
+ChorusIntSpecial() {
+    Slide(Checker(0 10 10) Color(255 255 255) 0.4 Single)
+    Wait(0.1)
+    Slide(Checker(0 10 10) Color(100 100 100) 0.4 Single)
+    Wait(0.2)
+    Slide(Checker(0 10 10) Color(100 0 0) 0.4 Single)
+}
+
+ChorusSpecial() {
+    introredslides()
+
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+
+    introredslides()
+
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+    ChorusIntSpecial()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+    muhlaterpulseB()
+    Wait(0.5)
+    muhlaterpulseA()
+    Wait(0.5)
+}
+
+
+<Playback>
+00:07:50 muhmuh()
+00:11:50 muhmuh()
+00:15:50 muhmuh()
+00:08:20 introredslides()
+00:12:30 introredslides()
+00:16:30 introredslides()
+00:20:30 introredslides()
+00:16:30 muhlater()
+00:24:40 Verse()
+00:40:50 Bridge()
+00:48:60 BridgeShort()
+00:56:70 Chorus()
+01:12:90 popopopoker()
+01:20:90 Verse()
+01:37:00 Bridge()
+01:45:00 BridgeShort()
+01:53:00 Chorus()
+02:09:30 popopopoker()
+02:20:60 muhmuh()
+02:17:40 popopopoker()
+02:25:40 muhlater()
+02:33:50 muhlater()
+02:41:50 introredslides()
+02:49:60 ChorusSpecial()
+02:57:70 ChorusSpecial()
+03:05:70 ChorusSpecial()
+03:13:80 ChorusSpecial()
+03:21:90 ChorusSpecial()
+03:30:00 muhlater()
+03:38:00 popopopoker()
+03:46:00 popopopoker()
