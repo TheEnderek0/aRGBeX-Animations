@@ -1,0 +1,462 @@
+Just Dance
+
+
+<Sequences>
+
+checkBlueA() {
+    Static(Checker(10 10 30) ColorShift(Color(0 0 0) Color(0 0 100) 0.05))
+    Wait(0.05)
+    Static(Checker(10 10 30) ColorShift(Color(0 0 100) Color(0 0 0) 0.7))
+}
+
+checkBlueB() {
+    Static(Checker(20 10 30) ColorShift(Color(0 0 0) Color(0 0 100) 0.05))
+    Wait(0.05)
+    Static(Checker(20 10 30) ColorShift(Color(0 0 100) Color(0 0 0) 0.7))
+}
+
+checkBlueC() {
+    Static(Checker(30 10 30) ColorShift(Color(0 0 0) Color(0 0 100) 0.05))
+    Wait(0.05)
+    Static(Checker(30 10 30) ColorShift(Color(0 0 100) Color(0 0 0) 0.7))
+}
+
+checkWhitePulse() {
+    Static(Checker(0 10 30) ColorShift(Color(0 0 0) Color(255 255 255) 0.05))
+    Wait(0.05)
+    Static(Checker(0 10 30) ColorShift(Color(255 255 255) Color(0 0 0) 0.7))
+}
+
+Intro() { //12 seconds
+    checkBlueA()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    Wait(0.5)
+    checkBlueA()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    Wait(0.5)
+    checkBlueA() //3
+    Wait(0.5)
+    checkBlueB() //3.5
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse() //4
+
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+
+}
+
+Verse() {
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueA()
+    Wait(0.5)
+    checkBlueB()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueC()
+    Wait(0.5)
+    checkBlueA()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueB()
+    Wait(0.5)
+    checkBlueC()
+    checkWhitePulse()
+}
+
+checkBlueABright() {
+    Static(Checker(10 10 30) ColorShift(Color(0 0 0) Color(0 0 255) 0.05))
+    Wait(0.05)
+    Static(Checker(10 10 30) ColorShift(Color(0 0 255) Color(0 0 0) 0.7))
+}
+
+checkBlueBBright() {
+    Static(Checker(20 10 30) ColorShift(Color(0 0 0) Color(0 0 255) 0.05))
+    Wait(0.05)
+    Static(Checker(20 10 30) ColorShift(Color(0 0 255) Color(0 0 0) 0.7))
+}
+
+checkBlueCBright() {
+    Static(Checker(30 10 30) ColorShift(Color(0 0 0) Color(0 0 255) 0.05))
+    Wait(0.05)
+    Static(Checker(30 10 30) ColorShift(Color(0 0 255) Color(0 0 0) 0.7))
+}
+
+Bridge() {
+    checkBlueABright() //0
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueBBright() 
+    Wait(0.5)
+    checkBlueCBright() //1
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueABright()
+    Wait(0.5)
+    checkBlueBBright() //2
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright() 
+    Wait(0.5)
+    checkBlueABright() //3
+    checkWhitePulse()
+    Wait(0.5)
+
+    //I love this record baby | 4.5 seconds
+
+    checkBlueBBright() 
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright() //1
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueABright()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueBBright() //2
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright() 
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueABright() //3
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueBBright()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright() //4
+    checkWhitePulse()
+    Wait(0.5)
+
+    //Keep it cool
+
+    checkBlueABright() //0
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueBBright()
+    Wait(0.5)
+    checkBlueCBright() //1
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueABright()
+    Wait(0.5)
+    checkBlueBBright() //2
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright()
+    Wait(0.5)
+    checkBlueABright() //3
+    checkWhitePulse()
+    Wait(0.5)
+
+    //Its alright
+
+    checkBlueBBright()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueABright()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueBBright()
+    checkWhitePulse()
+    Wait(0.5)
+    checkBlueCBright()
+    checkWhitePulse()
+}
+
+JustDance() {
+    Slide(Range(1 150) Color(0 0 255) 0.25 Single)
+    Wait(0.5)
+    Static(Range(151 300) ColorShift(Color(0 0 0) Color(255 255 255) 0.2))
+    Wait(0.25)
+    Static(Range(1 150) ColorShift(Color(0 0 255) Color(0 0 0) 0.25))
+    Static(Range(151 300) ColorShift(Color(255 255 255) Color(0 0 0) 0.25))
+}
+
+Chorus() {
+    JustDance()
+    Wait(1)
+    Slide(Checker(0 10 10) Color(0 0 255) 0.5 Single)
+    Wait(0.5)
+    Slide(Checker(10 10 10) Color(0 0 255) 0.5 Single Reversed)
+    Wait(0.5)
+    Slide(Checker(0 10 10) Color(255 255 255) 0.5 Single)
+    Wait(0.5)
+    Slide(Checker(10 10 10) Color(255 255 255) 0.5 Single Reversed)
+    Wait(0.5)
+    Slide(All() Color(0 0 0) 1 Single Reversed)
+    Wait(1)
+
+    JustDance() //4 
+    Wait(1)
+    Slide(Checker(0 10 10) Color(0 0 255) 0.5 Single)
+    Wait(0.5)
+    Slide(Checker(10 10 10) Color(0 0 255) 0.5 Single Reversed)
+    Wait(0.5)
+    Slide(Checker(0 10 10) Color(255 255 255) 0.5 Single)
+    Wait(0.5)
+    Slide(Checker(10 10 10) Color(255 255 255) 0.5 Single Reversed)
+    Wait(0.5)
+    Slide(All() Color(0 0 0) 1 Single Reversed)
+    Wait(1)
+
+    JustDance() //8  | 0
+    Wait(1)
+    Slide(Checker(0 10 10) Color(0 0 255) 0.5 Single) // 1
+    Wait(0.5)
+    Slide(Checker(10 10 10) Color(0 0 255) 0.5 Single Reversed) 
+    Wait(0.5)
+    Slide(All() Color(0 0 0) 1 Single Reversed) // 2
+    Wait(0.8)
+    
+    //Da da da Dance
+    checkWhitePulse()
+    Wait(0.5)
+    checkWhitePulse()
+    Wait(0.5)
+    checkWhitePulse()
+    Wait(0.5)
+
+    checkBlueABright()
+    Wait(1)
+    checkBlueBBright()
+    Wait(1)
+    checkBlueCBright()
+    Wait(2)
+    JustDance()
+}
+
+checkPA() {
+    Static(Checker(0 10 10) ColorShift(Color(0 0 0) Color(213 115 26) 0.05))
+    Wait(0.05)
+    Static(Checker(0 10 10) ColorShift(Color(213 115 26) Color(0 0 0) 0.7))
+}
+
+checkPB() {
+    Static(Checker(10 10 10) ColorShift(Color(0 0 0) Color(213 115 26) 0.05))
+    Wait(0.05)
+    Static(Checker(10 10 10) ColorShift(Color(213 115 26) Color(0 0 0) 0.7))
+}
+
+pulseP() {
+    Static(All() ColorShift(Color(0 0 0) Color(213 115 26) 0.05))
+    Wait(0.05)
+    Static(All() ColorShift(Color(213 115 26) Color(0 0 0) 0.4))
+}
+
+HalfPsychotic() {
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+    checkPB()
+    Wait(0.5)
+    checkPA()
+    Wait(0.5)
+}
+
+<Playback>
+00:04:10 Intro()
+00:16:70 Verse()
+00:32:90 Bridge()
+00:48:00 Chorus()
+01:06:70 Verse()
+01:23:30 Bridge()
+01:38:40 Chorus()
+01:55:00 Verse()
+02:11:20 Verse()
+02:27:30 checkWhitePulse()
+02:31:35 checkWhitePulse()
+02:34:60 Chorus()
+02:59:60 HalfPsychotic()
+03:08:20 HalfPsychotic()
+03:16:20 pulseP()
+03:16:70 checkPA()
+03:17:20 checkPA()
+
+03:17:70 checkPB()
+03:18:20 checkPB()
+
+03:18:70 checkPA()
+03:19:20 checkPA()
+
+03:19:70 checkPB()
+03:20:20 checkPB()
+
+03:20:70 checkPA()
+03:21:20 checkPA()
+
+03:21:70 checkPB()
+03:22:20 checkPB()
+
+03:22:70 checkPA()
+
+03:23:30 pulseP() //Don't
+03:23:80 pulseP() //Slow
+
+03:24:80 checkPA()
+03:25:30 checkPA()
+
+03:25:80 checkPB()
+03:26:30 checkPB()
+
+03:26:80 checkPA()
+03:27:30 checkPA()
+
+03:27:80 checkPB()
+03:28:30 checkPB()
+
+03:28:80 checkPA()
+03:29:30 checkPA()
+
+03:29:80 checkPB()
+03:30:30 checkPB()
+
+03:31:40 checkWhitePulse()
+03:31:90 pulseP()
+
+03:35:40 checkWhitePulse()
+03:35:90 pulseP()
+
+03:39:40 Chorus() 
+
+04:02:00 Static(All() Color(0 0 0))
